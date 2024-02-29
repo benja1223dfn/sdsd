@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo Mucho Preciosa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #cc66ff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 70%;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: #333;
+            overflow-y: auto;
+            max-height: 70vh;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #ff66b2;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .pregunta {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .opciones {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .opcion {
+            margin-top: 15px;
+            padding: 15px 30px;
+            background-color: #ff66b2;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .opcion:hover {
+            background-color: #6f52ed;
+        }
+
+        .no {
+            animation: mover 2s linear infinite;
+        }
+
+        @keyframes mover {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-50vw);
+            }
+            50% {
+                transform: translateX(0);
+            }
+            75% {
+                transform: translateX(50vw);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .corazon {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('https://image.flaticon.com/icons/png/512/148/148836.png');
+            background-size: cover;
+            animation: flotar 2s infinite;
+        }
+
+        @keyframes flotar {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Te Amo Mucho Preciosa</h1>
+    <p>Quiero que sepas cuánto significas para mí. Eres la luz que ilumina mi vida y la razón por la cual sonrío todos los días...</p>
+    
+    <!-- Nueva sección con la pregunta y opciones -->
+    <div class="pregunta">¿Me amas?</div>
+    
+    <div class="opciones">
+        <a href="te_amo_musho.html" class="opcion">SI<span class="corazon"></span></a>
+        <a href="estas_segura.html" class="opcion no">NO<span class="corazon"></span></a>
+    </div>
+</div>
+
+<footer>
+    <p>¡Eres mi todo!</p>
+</footer>
+
+</body>
+</html>
+

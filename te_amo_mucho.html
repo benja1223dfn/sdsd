@@ -1,0 +1,90 @@
+<!-- Contenido del archivo te_amo_mucho.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo Mucho</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #ff66b2;
+            color: #000; /* Cambiado a texto negro */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fff; /* Cambiado a texto blanco */
+        }
+
+        p {
+            font-size: 24px; /* Aumentado el tamaño del texto */
+            line-height: 1.6;
+            text-align: center; /* Alineado al centro */
+            margin-bottom: 20px;
+            color: #fff; /* Cambiado a texto blanco */
+        }
+
+        .decoracion {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff66b2; /* Color de la decoración */
+        }
+
+        .corazon {
+            width: 50px;
+            height: 50px;
+            margin: 0 10px; /* Añadido margen al corazón */
+            background-image: url('https://image.flaticon.com/icons/png/512/148/148836.png');
+            background-size: cover;
+            animation: girar 2s infinite;
+        }
+
+        @keyframes girar {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Te Amo Mucho</h1>
+<p>Gracias por aceptar mi amor. Eres lo más importante para mí.</p>
+
+<div class="decoracion">
+    <p>❤️</p>
+    <div class="corazon"></div>
+    <p>❤️</p>
+</div>
+
+<footer>
+    <p>¡Eres mi todo!</p>
+</footer>
+
+</body>
+</html>
